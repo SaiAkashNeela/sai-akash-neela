@@ -33,7 +33,7 @@ export const resumeData: ResumeData = {
     github: "www.github.com/saiakashneela",
     x: "x.com/TheSaiAkash",
     medium: "medium.com/@saiakashneela",
-    resume: "https://mega.nz/file/7mwEAKKC#hDrk6LGlggYFBEgZzm3EXU7spPxuABERVpp7zCjTckw"
+    resume: "mega.nz/file/7mwEAKKC#hDrk6LGlggYFBEgZzm3EXU7spPxuABERVpp7zCjTckw"
   },
   summary: "I'm an AI & DevOps Engineer passionate about designing and deploying intelligent systems that solve real‑world problems. I heavily leverage AI to build high-performance mobile, desktop, and web applications faster and better. Experienced in developing and deploying scalable AI and cloud systems, building REST APIs, data models, and React frontends, I specialize in integrating RAG pipelines, MCP servers, and automation tools to support real operational workflows.",
   experience: [
