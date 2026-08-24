@@ -14,10 +14,11 @@ import { BottomNav } from './components/BottomNav';
 import { Footer } from './components/Footer';
 
 const THEME_STORAGE_KEY_V1 = 'portfolio_theme_v1';
+type TabType = 'all' | 'projects' | 'experience' | 'blog';
 
 export const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
-  const [currentView, setCurrentView] = useState<'home' | 'blog'>('home');
+  const [activeTab, setActiveTab] = useState<TabType>('all');
   const { gitHistory, isLoading } = useGitHistory();
 
   // Initialize theme based on user preference or time of day
@@ -59,49 +60,57 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 py-8 px-4 sm:px-6 lg:px-8 font-sans text-zinc-800 dark:text-zinc-200 pb-28 sm:pb-16 transition-colors duration-200">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 py-6 sm:py-10 px-4 sm:px-6 lg:px-8 font-sans text-zinc-900 dark:text-zinc-100 pb-28 sm:pb-16 transition-colors duration-200">
       <div className="max-w-5xl mx-auto relative">
         {/* Floating Theme Toggle - Top Right */}
-        <div className="absolute top-0 right-0 z-40">
+        <div className="absolute top-2 right-0 z-40 hidden sm:block">
           <ThemeToggle darkMode={darkMode} onToggle={toggleTheme} />
         </div>
 
-        {currentView === 'blog' ? (
+        {/* Global Header */}
+        <Header
+          data={resumeData}
+          activeTab={activeTab}
+          onSelectTab={(tab) => setActiveTab(tab)}
+        />
+
+        {/* Dynamic Views */}
+        {activeTab === 'blog' ? (
           <BlogView
             posts={resumeData.blogPosts}
-            onBack={() => setCurrentView('home')}
+            onBack={() => setActiveTab('all')}
           />
-        ) : (
-          <main>
-            {/* Header / Hero */}
-            <Header
-              data={resumeData}
-              onOpenBlog={() => setCurrentView('blog')}
+        ) : activeTab === 'projects' ? (
+          <main className="space-y-10">
+            <ProjectsList projects={resumeData.projects} />
+          </main>
+        ) : activeTab === 'experience' ? (
+          <main className="space-y-10">
+            <ExperienceList experience={resumeData.experience} />
+            <EducationCerts
+              education={resumeData.education}
+              certifications={resumeData.certifications}
+              publications={resumeData.publications}
             />
+          </main>
+        ) : (
+          /* Overview (All) */
+          <main>
+            {/* GitHub Activity & Telemetry Heatmap (Prominent at top) */}
+            <ContributionGraph data={gitHistory} isLoading={isLoading} />
 
-            {/* Main Content Layout */}
+            {/* Asymmetric 2-Column Bento / Grid Layout */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
-              {/* Main Column (Left / Top) */}
-              <div className="lg:col-span-2 space-y-10">
-                {/* GitHub Contribution Activity */}
-                <ContributionGraph data={gitHistory} isLoading={isLoading} />
-
-                {/* Projects Section */}
+              {/* Primary Column (Left 2 cols) */}
+              <div className="lg:col-span-2 space-y-12">
                 <ProjectsList projects={resumeData.projects} />
-
-                {/* Work Experience */}
                 <ExperienceList experience={resumeData.experience} />
               </div>
 
-              {/* Sidebar Column (Right / Sticky on Desktop) */}
-              <div className="space-y-8">
-                {/* Indie Stack */}
+              {/* Auxiliary Column (Right 1 col) */}
+              <div className="space-y-10">
                 <IndieKit items={resumeData.indieKit} />
-
-                {/* Technical Toolkit */}
                 <SkillsSection skills={resumeData.skills} />
-
-                {/* Education & Certifications */}
                 <EducationCerts
                   education={resumeData.education}
                   certifications={resumeData.certifications}
@@ -116,11 +125,13 @@ export const App: React.FC = () => {
         <Footer />
       </div>
 
-      {/* Floating Bottom Nav for Mobile / Tablet */}
+      {/* Floating Bottom Navigation Dock for Mobile */}
       <BottomNav
         data={resumeData}
-        currentView={currentView}
-        onNavigate={(view) => setCurrentView(view)}
+        activeTab={activeTab}
+        onSelectTab={(tab) => setActiveTab(tab)}
+        darkMode={darkMode}
+        onToggleTheme={toggleTheme}
       />
     </div>
   );

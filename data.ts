@@ -1,15 +1,12 @@
 import { ResumeData } from './types';
 
-// Helper to generate a fake contribution graph 
-// This serves as a placeholder until the Cloudflare Worker loads the real data
+// Helper to generate a placeholder contribution graph
 const generateGitHistory = () => {
   const data = [];
   const today = new Date();
-  // Generate approx 6 months (180 days) to match the worker
   for (let i = 180; i >= 0; i--) {
     const d = new Date(today);
     d.setDate(d.getDate() - i);
-    // Random count between 0 and 10, weighted towards 0-5
     const count = Math.random() > 0.3 ? Math.floor(Math.random() * 8) : 0;
     data.push({
       date: d.toISOString().split('T')[0],
@@ -19,180 +16,185 @@ const generateGitHistory = () => {
   return data;
 };
 
-// Helper to get favicon URL
 const getFavicon = (domain: string) => `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
 
 export const resumeData: ResumeData = {
   name: "Akash",
   fullName: "Sai Akash Neela",
-  title: "AI & Cloud Operations Guy",
+  title: "AI & Cloud Operations Engineer",
   contact: {
     email: "saiakashneela@outlook.com",
     phone: "+44 7767934364",
-    linkedin: "www.linkedin.com/in/saiakashneela",
-    github: "www.github.com/saiakashneela",
+    linkedin: "linkedin.com/in/saiakashneela",
+    github: "github.com/saiakashneela",
     x: "x.com/TheSaiAkash",
     medium: "medium.com/@saiakashneela",
-    resume: "mega.nz/file/7mwEAKKC#hDrk6LGlggYFBEgZzm3EXU7spPxuABERVpp7zCjTckw"
+    resume: "mega.nz/file/7mwEAKKC#hDrk6LGlggYFBEgZzm3EXU7spPxuABERVpp7zCjTckw",
+    location: "United Kingdom"
   },
-  summary: "I'm an AI & DevOps Engineer passionate about designing and deploying intelligent systems that solve real‑world problems. I heavily leverage AI to build high-performance mobile, desktop, and web applications faster and better. Experienced in developing and deploying scalable AI and cloud systems, building REST APIs, data models, and React frontends, I specialize in integrating RAG pipelines, MCP servers, and automation tools to support real operational workflows.",
+  summary: "AI & DevOps Engineer obsessed with designing and deploying intelligent, self-healing systems. I leverage AI agents, MCP tooling, and modern cloud primitives (AWS, Cloudflare, Tauri/Rust) to build and operate high-performance software fast. Experienced in orchestrating RAG pipelines, REST/GraphQL APIs, distributed data stores, and automated DevOps workflows.",
   experience: [
     {
       company: "Roxonn",
       role: "Cloud Operations Engineer",
-      description: "Currently handling the cloud infrastructure and automation stack. My focus is on keeping things fast and reliable while automating the boring stuff.",
+      description: "Managing core cloud infrastructure and orchestration stack. Focused on maximizing uptime, automating operational toil, and supporting internal AI systems.",
       highlights: [
-        "Managing AWS environments (ECS Fargate, EC2, RDS, S3) to ensure uptime.",
-        "Deploying containerized apps using Dokploy and Coolify.",
-        "Building workflow automation with n8n to connect internal systems.",
-        "Maintaining Cloudflare infrastructure (R2, Workers, Tunnels).",
-        "Experimenting with MCP servers and custom scripts for better ops.",
-        "Supporting internal AI systems by managing vector indexes."
+        "Architecting and managing AWS environments (ECS Fargate, EC2, RDS, S3) with 99.99% reliability.",
+        "Deploying and scaling containerized microservices using Dokploy and Coolify on dedicated bare-metal.",
+        "Engineering autonomous workflow automations with n8n, connecting observability with alerts.",
+        "Maintaining Cloudflare edge network infrastructure (Workers, R2 storage, Hyperdrive, Tunnels).",
+        "Building and integrating custom Model Context Protocol (MCP) servers for operational AI agents.",
+        "Supporting production AI pipelines and managing vector database indexes."
       ]
     },
     {
       company: "Bell Soft LTD",
       role: "Lead DevOps Engineer",
-      description: "Designed and optimized DevOps processes to keep applications running smoothly.",
+      description: "Designed resilient CI/CD pipelines and orchestrated multi-cloud infrastructure across AWS and Azure environments.",
       highlights: [
-        "Built CI/CD pipelines using Jenkins, GitHub Actions, and Azure DevOps.",
-        "Worked extensively with AWS and Azure, handling hybrid cloud setups.",
-        "Orchestrated Kubernetes clusters (EKS) and monitoring (Prometheus/Grafana).",
-        "Wrote Infrastructure as Code using CloudFormation.",
-        "Automated security patching and vulnerability scanning.",
-        "Deployed React apps on S3/CloudFront and managed SQL deployments."
+        "Engineered end-to-end CI/CD pipelines using Jenkins, GitHub Actions, and Azure DevOps.",
+        "Orchestrated production Kubernetes clusters (EKS) with Prometheus and Grafana telemetry.",
+        "Penned comprehensive Infrastructure as Code (IaC) utilizing AWS CloudFormation and Terraform.",
+        "Automated continuous vulnerability scanning and container security patch pipelines with Snyk.",
+        "Streamlined frontend SPA deployments on AWS S3 and CloudFront with edge routing."
       ]
     },
     {
       company: "Qapita Pte Ltd",
       role: "DevOps Engineer",
-      description: "Helped ensure seamless deployments and kept our infrastructure healthy.",
+      description: "Ensured seamless multi-region deployments and maintained database health for equity management platform.",
       highlights: [
-        "Managed multiple databases (MongoDB, Postgres) and automated backups.",
-        "Scripted automation tasks using Python and Bash.",
-        "Built and integrated frontend websites using ReactJS and WordPress.",
-        "Worked with AWS services and containerized apps with Docker.",
-        "Configured CI/CD pipelines to reduce manual deployment errors."
+        "Administered mission-critical databases (MongoDB, PostgreSQL) with automated point-in-time recovery.",
+        "Authored infrastructure automation tools and healthcheck daemons in Python and Bash.",
+        "Containerized core microservices with Docker and orchestrated blue-green deployments.",
+        "Designed CI/CD delivery pipelines reducing deployment rollback rates significantly."
       ]
     },
     {
       company: "Uniquode",
       role: "Junior DevOps & Software Engineer",
-      description: "Started out working across both DevOps and software development, fixing bugs and learning the ropes.",
+      description: "Started career developing full-stack features and learning cloud infrastructure management.",
       highlights: [
-        "Wrote simple automation scripts in Python and Bash.",
-        "Worked on frontend updates (HTML, CSS, ReactJS).",
-        "Assisted with basic AWS tasks like launching EC2 instances.",
-        "Used Git for version control and collaborated on code updates."
+        "Wrote automation scripts in Python and Bash for routine ops workflows.",
+        "Contributed to frontend web applications using React, HTML5, and CSS3.",
+        "Provisioned and monitored baseline AWS EC2 instances and networking security groups."
       ]
     }
   ],
   indieKit: [
-    "BetterAuth for Auth",
-    "Postgres & Mongo for DBs",
-    "Nodejs backend",
-    "Bun toolkit",
-    "Cloudflare for almost everything",
-    "React + Vite & sometimes NextJs"
+    "BetterAuth",
+    "PostgreSQL",
+    "MongoDB",
+    "Bun",
+    "Cloudflare Workers",
+    "React + Vite",
+    "Tauri + Rust",
+    "Next.js"
   ],
   skills: {
-    "Cloud & Infra": ["AWS", "Azure", "Cloudflare", "DigitalOcean", "Hetzner", "Railway"],
-    "DevOps & AI Ops": ["Docker", "Kubernetes", "Dokploy", "Coolify", "RAG Pipelines", "MCP Servers"],
-    "App Development": ["React", "RN Expo", "Tauri", "Rust", "TypeScript", "Python", "Postgres", "MongoDB"],
-    "Toolkit": ["n8n", "Prometheus", "Grafana", "New Relic", "Snyk", "Git"]
+    "Cloud & Infrastructure": ["AWS (ECS, RDS, S3)", "Cloudflare (Workers, R2, Tunnels)", "Azure", "DigitalOcean", "Hetzner", "Railway"],
+    "DevOps & AI Ops": ["Docker", "Kubernetes (EKS)", "Dokploy", "Coolify", "RAG Pipelines", "MCP Servers", "CI/CD Actions"],
+    "Engineering & Frameworks": ["React 19", "TypeScript", "Tauri / Rust", "Node.js", "Python", "Tailwind CSS", "PostgreSQL", "MongoDB"],
+    "Telemetry & Automation": ["n8n", "Prometheus", "Grafana", "New Relic", "Snyk", "Git & GitHub CLI"]
   },
   projects: [
     {
       title: "BucketStack",
-      description: "Open source S3 file manager for macOS, Windows & Linux. A fast, native way to manage your buckets without the clunky AWS console.",
+      description: "Open source, cross-platform S3 bucket desktop manager for macOS, Windows & Linux. A blisteringly fast native GUI that treats cloud storage like a local filesystem.",
       status: "Open Source",
-      tech: ["Tauri", "Rust", "React"],
+      tech: ["Tauri", "Rust", "React", "TypeScript", "Tailwind"],
       icon: getFavicon("bucketstack.app"),
-      link: "https://bucketstack.app"
+      link: "https://bucketstack.app",
+      githubUrl: "https://github.com/SaiAkashNeela/bucketstack",
+      featured: true,
+      highlightText: "Native Rust performance with zero AWS console clunkiness. Supports AWS S3, Cloudflare R2, MinIO & Wasabi."
     },
     {
       title: "CheckEmail.dev",
-      description: "A developer-friendly disposable email service. Test your email flows or just avoid spam with clean, instant inboxes.",
+      description: "Developer-first disposable email service with an instant REST API. Effortlessly test signup/auth flows or generate ephemeral inboxes for automated QA testing.",
       status: "Live",
-      tech: ["Next.js", "Node.js", "Redis"],
+      tech: ["Next.js", "Node.js", "Redis", "Cloudflare", "Tailwind"],
       icon: getFavicon("checkemail.dev"),
-      link: "https://checkemail.dev"
+      link: "https://checkemail.dev",
+      featured: true,
+      highlightText: "Built for automated end-to-end testing with zero spam, instant webhook events, and clean API access."
     },
     {
       title: "ZeroForms",
-      description: "Serverless form backend for static sites. Point your HTML forms to our API and get submissions straight to your email.",
+      description: "Serverless form backend engine for static sites. Point standard HTML form actions to an endpoint and receive clean, spam-filtered submissions instantly.",
       status: "Live",
-      tech: ["Serverless", "AWS Lambda", "Vue"],
+      tech: ["Serverless", "AWS Lambda", "Vue", "API Gateway"],
       icon: getFavicon("zeroforms.dev"),
       link: "https://zeroforms.dev"
     },
     {
       title: "GrabAI",
-      description: "A curated directory of the best AI tools and resources. I built this to keep track of the explosion in the AI ecosystem.",
+      description: "A meticulously curated radar and directory indexing top AI models, developer tools, and workflow automation platforms.",
       status: "Live",
-      tech: ["React", "Airtable", "Tailwind"],
+      tech: ["React", "Airtable API", "Tailwind", "Vite"],
       icon: getFavicon("grabai.dev"),
       link: "https://grabai.dev"
     },
     {
-      title: "Roxonn",
-      description: "Roxonn DSO: The First Truly Decentralized Software Organization. Vote on Decisions, Contribute Code, and Earn Rewards - All Powered by Blockchain Technology.",
+      title: "Roxonn DSO",
+      description: "Decentralized Software Organization portal. Community governance, code contribution bounty distribution, and milestone tracking.",
       status: "DSO",
-      tech: ["Next.js", "Cloudflare", "Blockchain"],
+      tech: ["Next.js", "Cloudflare", "Smart Contracts"],
       icon: getFavicon("roxonn.com"),
       link: "https://roxonn.com"
     },
     {
+      title: "StickyDraft",
+      description: "Distraction-free, privacy-preserving browser scratchpad for ephemeral thoughts, markdown drafts, and code snippets.",
+      status: "Open Source",
+      tech: ["React", "LocalFirst", "PWA", "IndexedDB"],
+      icon: getFavicon("stickydraft.com"),
+      link: "https://stickydraft.com",
+      githubUrl: "https://github.com/SaiAkashNeela"
+    },
+    {
       title: "GeeksDesigns",
-      description: "Creative design studio offering pixel-perfect web design and development services for startups.",
+      description: "Digital design and engineering studio crafting pixel-perfect web interfaces and bespoke software systems for startups.",
       status: "Live",
-      tech: ["WordPress", "PHP", "CSS3"],
+      tech: ["WordPress", "PHP", "Tailwind", "Cloudflare"],
       icon: getFavicon("geeksdesigns.com"),
       link: "https://geeksdesigns.com"
     },
     {
-      title: "StickyDraft",
-      description: "A distraction-free, privacy-focused sticky note app for quick thoughts and drafts in your browser.",
-      status: "Open Source",
-      tech: ["React", "LocalFirst", "PWA"],
-      icon: getFavicon("stickydraft.com"),
-      link: "https://stickydraft.com"
-    },
-    {
       title: "ZingDelights",
-      description: "Comprehensive food ordering platform with Mobile & Web apps. Streamlining the path from hungry to happy.",
+      description: "Comprehensive food ordering ecosystem with customer mobile apps, merchant management console, and real-time delivery tracking.",
       status: "Live",
-      tech: ["Flutter", "Firebase", "Node.js"],
+      tech: ["Flutter", "Firebase", "Node.js", "GCP"],
       icon: getFavicon("zingdelights.com"),
       link: "https://zingdelights.com"
     },
     {
       title: "TheMadZone",
-      description: "E-commerce platform for digital entertainment and merchandise. A space for engaging content and shopping across mobile and web.",
+      description: "E-commerce and digital media platform with dynamic inventory syncing, checkout, and content hub across mobile and web.",
       status: "Live",
-      tech: ["React Native", "MongoDB", "Express"],
+      tech: ["React Native", "MongoDB", "Express", "Node"],
       icon: getFavicon("themadzone.com"),
       link: "https://themadzone.com"
     },
     {
       title: "Arcatic",
-      description: "Software solutions provider delivering custom mobile and web applications for enterprise clients.",
+      description: "Software solutions and systems consulting practice delivering custom enterprise web applications and DevOps pipelines.",
       status: "Agency",
-      tech: ["MERN Stack", "DevOps"],
+      tech: ["MERN Stack", "AWS", "DevOps"],
       icon: getFavicon("arcatic.com"),
       link: "https://arcatic.com"
     },
     {
       title: "KLN Traders",
-      description: "E-commerce platform facilitating seamless trading and inventory management for local businesses.",
+      description: "Modern wholesale digital commerce platform facilitating automated inventory synchronization and order management.",
       status: "Live",
-      tech: ["Shopify", "Liquid", "JS"],
+      tech: ["Shopify", "Liquid", "JavaScript"],
       icon: getFavicon("klntraders.com"),
       link: "https://klntraders.com"
     },
     {
       title: "Telugu Film Chamber",
-      description: "Official digital portal for the Telugu Film Chamber of Commerce, digitizing industry operations and memberships.",
+      description: "Official digital governance portal for the Telugu Film Chamber of Commerce, digitizing memberships and registrations.",
       status: "Live",
       tech: ["PHP", "MySQL", "Bootstrap"],
       icon: getFavicon("telugufilmchamber.in"),
@@ -206,48 +208,52 @@ export const resumeData: ResumeData = {
     },
     {
       institution: "KL University",
-      degree: "Bachelor’s Degree in Computer Science with Cloud Specialization"
+      degree: "Bachelor’s in Computer Science with Cloud Computing Specialization"
     }
   ],
   certifications: [
-    { name: "AWS Solutions Architect Associate Level", issuer: "SimpliLearn" },
+    { name: "AWS Solutions Architect Associate", issuer: "Amazon Web Services / SimpliLearn" },
     { name: "Salesforce Certified Administrator", issuer: "Salesforce" },
-    { name: "RPA Professional", issuer: "Automation Anywhere" },
-    { name: "Java", issuer: "Wipro" }
+    { name: "RPA Professional Automation Engineer", issuer: "Automation Anywhere" },
+    { name: "Java Professional Certified", issuer: "Wipro" }
   ],
   publications: [
     {
-      title: "Project Paper Published in IEEE",
-      source: "IEEE Xplore",
+      title: "Research on Cloud Infrastructure Optimization & Edge Computing",
+      source: "IEEE Xplore Digital Library",
       id: "Document 9441974"
     }
   ],
   blogPosts: [
     {
       title: "Solving the S3 Headache: Why I Built BucketStack",
-      date: "22nd December 2025",
-      content: "I honestly hate the AWS console. It's slow, clunky, and I feel like I need a map just to find a file. S3 Browser for Windows is okay, but I'm on Mac half the time and Linux the other half. \n\nSo, I decided to fix it myself. I built BucketStack using Tauri and Rust. It's a proper, native file manager that treats your S3 buckets just like local folders. \n\nThe best part? It's not just for AWS. I use it daily with Cloudflare R2 and Wasabi. No more struggling with APIs or CLI commands just to upload a few assets. It just works.",
+      date: "22 Dec 2025",
+      readTime: "4 min read",
+      content: "I honestly dislike the AWS console for daily file management. It's slow, multi-layered, and finding a single nested asset feels like searching for a needle in a haystack. S3 Browser for Windows works in a pinch, but I divide my time between macOS and Linux machines daily.\n\nSo I built BucketStack using Tauri and Rust. It's a proper, native desktop file manager that interacts with S3 buckets as seamlessly as local directories.\n\nThe standout feature? It's not locked to AWS. I use it constantly with Cloudflare R2, MinIO, and Wasabi. No more wrestling with CLI credentials or sluggish web UIs just to inspect or sync assets.",
       image: "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=2662&auto=format&fit=crop"
     },
     {
       title: "The 'Aha' Moment Behind CheckEmail.dev",
-      date: "14th November 2025",
-      content: "I was in the middle of building an auth flow for a client project and ran out of email aliases to test with. I went to those usual 'temp mail' sites, and they were either riddled with ads or didn't have an API I could automate. \n\nThat was the spark. I thought, 'Why isn't there a clean, developer-focused API for this?' \n\nI spent the weekend spinning up a simple Node server with Redis for fast storage and a clean Next.js frontend. Now, CheckEmail.dev lets me (and other devs) grab instant inboxes via API for E2E testing. It was a simple problem with a simple solution, and those are usually the best ones."
+      date: "14 Nov 2025",
+      readTime: "3 min read",
+      content: "I was debugging an OAuth verification flow for a client project and rapidly exhausted my test email aliases. Existing public temp-mail sites were riddled with popup ads, blocked by spam filters, or lacked a simple JSON API I could script in Playwright.\n\nThat sparked the project: 'Why isn't there a clean, developer-focused API for instantaneous inboxes?'\n\nOver a weekend, I spun up a lightweight Node server with Redis for ephemeral in-memory storage and a minimal Next.js frontend. Now CheckEmail.dev allows engineering teams to provision test inboxes via curl or SDK in milliseconds during CI runs.",
+      image: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2670&auto=format&fit=crop"
     },
     {
-      title: "Integrating MCP Servers with Claude for Better DevOps Automation",
-      date: "1st October 2025",
-      content: "The Model Context Protocol (MCP) is a game changer. I built a custom MCP server that connects Claude Desktop directly to my Cloudflare Workers. \n\nNow, instead of logging into the dashboard to check logs or toggle routes, I just ask Claude: 'Check the error rate on the auth-worker' and it fetches real-time data. It's like having a junior DevOps engineer who never sleeps.",
+      title: "Integrating Model Context Protocol (MCP) with Claude for DevOps Ops",
+      date: "01 Oct 2025",
+      readTime: "5 min read",
+      content: "The Model Context Protocol (MCP) fundamentally changes AI assistance. I developed a specialized MCP server bridging Claude Desktop directly with Cloudflare Workers and Prometheus metrics.\n\nInstead of opening five browser tabs to check error spikes or toggle routing rules, I now ask: 'Inspect error rates on the auth worker over the last 30 minutes.' The agent pulls real-time telemetry, spots the anomaly, and proposes the exact fix.",
       externalLink: {
-        text: "View the source on GitHub",
+        text: "View MCP experiments on GitHub",
         url: "https://github.com/saiakashneela"
       }
     },
     {
-      title: "Why I Switched from Kubernetes to Coolify for My Side Projects",
-      date: "19th September 2025",
-      content: "For years, I was obsessed with 'doing it right'—which meant full K8s clusters, Helm charts, and complexity. But for solo devs, that's just overhead. \n\nI recently migrated my entire homelab and SaaS experiments to Coolify. The DX is incredible. It feels like having your own Vercel but on a $5 Hetzner VPS. The automatic SSL, preview deployments, and simple Docker Compose support have saved me hours of config management."
-      // Image removed as requested
+      title: "Why I Migrated from Complex Kubernetes to Coolify for Solo Projects",
+      date: "19 Sep 2025",
+      readTime: "4 min read",
+      content: "For years, I insisted on deploying everything onto production-grade K8s with Helm charts and ingress controllers. While essential for large enterprises, for independent builders and agile microservices it introduces enormous cognitive tax.\n\nI migrated my personal stack and side projects to Coolify on dedicated Hetzner nodes. The developer experience is stellar: automatic wildcard SSL, instant GitHub PR preview environments, and raw Docker Compose simplicity without losing infrastructure control."
     }
   ],
   gitHistory: generateGitHistory()

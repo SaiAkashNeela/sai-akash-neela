@@ -19,10 +19,13 @@ export interface Job {
 export interface Project {
   title: string;
   description: string;
-  status: string;
+  status: 'Live' | 'Open Source' | 'Agency' | 'DSO' | 'Beta';
   tech: string[];
-  icon: string; // Can be a Lucide icon name OR a URL to an image/favicon
+  icon: string;
   link?: string;
+  githubUrl?: string;
+  featured?: boolean;
+  highlightText?: string;
 }
 
 export interface EducationItem {
@@ -38,7 +41,8 @@ export interface Certification {
 export interface BlogPost {
   title: string;
   date: string;
-  content: string; // Supports basic HTML or newlines
+  content: string;
+  readTime?: string;
   image?: string;
   externalLink?: {
     text: string;
