@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #09090b;
@@ -28,9 +30,9 @@
 .dark {
   --background: #09090b;
   --foreground: #fafafa;
-  --card: #09090b;
+  --card: #121215;
   --card-foreground: #fafafa;
-  --popover: #09090b;
+  --popover: #121215;
   --popover-foreground: #fafafa;
   --primary: #fafafa;
   --primary-foreground: #18181b;

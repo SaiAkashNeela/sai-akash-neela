@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { resumeData } from './data';
 import { useGitHistory } from './hooks/useGitHistory';
 import { HeroSection } from './components/HeroSection';
+import { LinksBar } from './components/LinksBar';
 import { AboutSection } from './components/AboutSection';
 import { GitHubSection } from './components/GitHubSection';
 import { WorkSection } from './components/WorkSection';
@@ -59,8 +60,9 @@ export const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans antialiased selection:bg-zinc-800 selection:text-white dark:selection:bg-zinc-200 dark:selection:text-black transition-colors duration-200">
       {/* Main Single Column Centered Layout matching Magic UI */}
-      <main className="max-w-2xl mx-auto py-12 sm:py-24 px-5 sm:px-6 flex flex-col gap-12 sm:gap-16 pb-28">
+      <main className="max-w-2xl mx-auto py-12 sm:py-24 px-5 sm:px-6 flex flex-col gap-10 sm:gap-14 pb-28">
         <HeroSection data={resumeData} />
+        <LinksBar data={resumeData} />
         <AboutSection summary={resumeData.summary} />
         <GitHubSection data={gitHistory} isLoading={isLoading} />
         <WorkSection experience={resumeData.experience} />

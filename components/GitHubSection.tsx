@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Github, Activity, Flame, ExternalLink } from 'lucide-react';
+import { Github, Activity, Flame, ExternalLink, GitCommit } from 'lucide-react';
 import { Contribution } from '../types';
 import { formatContributionDate, cn } from '../lib/utils';
 
@@ -13,15 +13,15 @@ function getContributionColor(count: number): string {
     return 'bg-zinc-100 dark:bg-zinc-800/80 border-zinc-200/50 dark:border-zinc-700/40';
   }
   if (count <= 2) {
-    return 'bg-zinc-300 dark:bg-zinc-600 border-zinc-400 dark:border-zinc-500';
+    return 'bg-emerald-200 dark:bg-emerald-950/70 border-emerald-300 dark:border-emerald-800';
   }
   if (count <= 4) {
-    return 'bg-zinc-500 dark:bg-zinc-400 border-zinc-600 dark:border-zinc-300';
+    return 'bg-emerald-400 dark:bg-emerald-700 border-emerald-500 dark:border-emerald-600';
   }
   if (count <= 6) {
-    return 'bg-zinc-700 dark:bg-zinc-300 border-zinc-800 dark:border-zinc-200';
+    return 'bg-emerald-500 dark:bg-emerald-500 border-emerald-600 dark:border-emerald-400';
   }
-  return 'bg-zinc-900 dark:bg-white border-black dark:border-white';
+  return 'bg-emerald-600 dark:bg-emerald-400 border-emerald-700 dark:border-emerald-300';
 }
 
 interface WeekGroup {
@@ -110,27 +110,32 @@ export const GitHubSection: React.FC<GitHubSectionProps> = ({ data, isLoading = 
 
   return (
     <section id="github" className="flex flex-col gap-4">
-      <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
-          <span>GitHub Activity</span>
-          <span className="text-xs font-normal text-zinc-500 dark:text-zinc-400">
-            ({isLoading ? '...' : `${stats.total} contributions in 6 mos`})
-          </span>
-        </h2>
+      {/* Header and Telemetry */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <h2 className="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
+            <span>GitHub Activity</span>
+          </h2>
+          <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">
+            {isLoading ? 'Fetching commits...' : `${stats.total} contributions in the last 6 months`}
+          </p>
+        </div>
 
         <a
           href="https://github.com/saiakashneela"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-xs font-medium text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors self-start sm:self-auto"
           aria-label="View Sai Akash on GitHub"
         >
-          <span>@saiakashneela</span>
-          <ExternalLink size={12} />
+          <Github size={13} />
+          <span>github.com/saiakashneela</span>
+          <ExternalLink size={11} className="text-zinc-400" />
         </a>
       </div>
 
-      <div className="border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 sm:p-5 bg-card relative">
+      {/* Main Container */}
+      <div className="border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 sm:p-5 bg-card relative shadow-xs">
         {/* Heatmap Grid */}
         <div 
           className="w-full overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-zinc-200 dark:scrollbar-thumb-zinc-800"
@@ -139,7 +144,7 @@ export const GitHubSection: React.FC<GitHubSectionProps> = ({ data, isLoading = 
           aria-label="GitHub contribution activity grid"
         >
           {/* Month Labels */}
-          <div className="flex relative mb-1.5 h-4 text-[10px] font-mono text-zinc-400 dark:text-zinc-500 select-none">
+          <div className="flex relative mb-2 h-4 text-[10px] font-medium text-zinc-400 dark:text-zinc-500 select-none">
             <div className="flex gap-[3px]">
               {weeks.map((week) => {
                 const labelObj = monthLabels.find((m) => m.weekId === week.id);
@@ -223,17 +228,17 @@ export const GitHubSection: React.FC<GitHubSectionProps> = ({ data, isLoading = 
           </div>
         )}
 
-        {/* Footer info */}
+        {/* Footer info & legend */}
         <div className="flex items-center justify-between mt-3 pt-2 border-t border-zinc-100 dark:border-zinc-800/60 text-[11px] text-zinc-500 dark:text-zinc-400">
-          <span className="sm:inline hidden">Synced with GitHub API</span>
-          <span className="sm:hidden inline">Swipe for history</span>
+          <span className="sm:inline hidden font-medium">Real-time commit telemetry</span>
+          <span className="sm:hidden inline font-medium">← Swipe to view history</span>
           <div className="flex items-center gap-1.5">
             <span>Less</span>
             <div className="flex gap-[2px]">
               <div className="w-2.5 h-2.5 rounded-[2px] bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700" />
-              <div className="w-2.5 h-2.5 rounded-[2px] bg-zinc-300 dark:bg-zinc-600 border border-zinc-400 dark:border-zinc-500" />
-              <div className="w-2.5 h-2.5 rounded-[2px] bg-zinc-500 dark:bg-zinc-400 border border-zinc-600 dark:border-zinc-300" />
-              <div className="w-2.5 h-2.5 rounded-[2px] bg-zinc-900 dark:bg-white border border-black dark:border-white" />
+              <div className="w-2.5 h-2.5 rounded-[2px] bg-emerald-200 dark:bg-emerald-950/70 border border-emerald-300 dark:border-emerald-800" />
+              <div className="w-2.5 h-2.5 rounded-[2px] bg-emerald-400 dark:bg-emerald-700 border border-emerald-500 dark:border-emerald-600" />
+              <div className="w-2.5 h-2.5 rounded-[2px] bg-emerald-600 dark:bg-emerald-400 border border-emerald-700 dark:border-emerald-300" />
             </div>
             <span>More</span>
           </div>
