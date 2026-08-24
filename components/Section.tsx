@@ -1,4 +1,5 @@
 import React from 'react';
+import { cn } from '../lib/utils';
 
 interface SectionProps {
   title: string;
@@ -7,18 +8,18 @@ interface SectionProps {
   icon?: React.ReactNode;
 }
 
-export const Section: React.FC<SectionProps> = ({ title, children, className = "", icon }) => {
+export const Section: React.FC<SectionProps> = ({ title, children, className = '', icon }) => {
   return (
-    <div className={`mb-10 ${className}`}>
-      <div className="flex items-center gap-2 mb-4">
-        {icon && <span className="text-indigo-500 dark:text-indigo-400">{icon}</span>}
-        <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100 tracking-tight">
+    <section className={cn('mb-10', className)}>
+      <div className="flex items-center gap-2.5 mb-4">
+        {icon && <span className="text-indigo-600 dark:text-indigo-400">{icon}</span>}
+        <h3 className="text-lg sm:text-xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
           {title}
         </h3>
       </div>
-      <div className="text-gray-700 dark:text-gray-300">
+      <div className="text-zinc-700 dark:text-zinc-300">
         {children}
       </div>
-    </div>
+    </section>
   );
 };
