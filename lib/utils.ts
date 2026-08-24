@@ -24,9 +24,3 @@ export function formatContributionDate(dateStr: string): string {
   
   return `${day}${getSuffix(day)} ${month}`;
 }
-
-export function scrollToTop(): void {
-  if (typeof window !== 'undefined') {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-}

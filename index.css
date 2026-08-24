@@ -1,47 +1,50 @@
 @import "tailwindcss";
 
-/* Hallmark · macrostructure: Bento Grid · genre: modern-minimal · theme: Slate-Indigo-OKLCH */
 :root {
-  --color-paper: #fcfcfd;
-  --color-paper-subtle: #f4f4f6;
-  --color-paper-card: #ffffff;
-  --color-paper-elevated: #ffffff;
-  --color-ink: #09090b;
-  --color-ink-muted: #52525b;
-  --color-ink-faint: #71717a;
-  
-  --color-accent: #4f46e5;
-  --color-accent-hover: #4338ca;
-  --color-accent-subtle: #eef2ff;
-  --color-border: #e4e4e7;
-  --color-border-subtle: #f4f4f5;
-  --color-border-glow: rgba(79, 70, 229, 0.2);
-
-  --color-emerald: #059669;
-  --color-emerald-subtle: #ecfdf5;
+  --background: #ffffff;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  --primary: #09090b;
+  --primary-foreground: #fafafa;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #18181b;
+  --radius: 0.75rem;
 
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, monospace;
 }
 
 .dark {
-  --color-paper: #09090b;
-  --color-paper-subtle: #111114;
-  --color-paper-card: #141418;
-  --color-paper-elevated: #1a1a20;
-  --color-ink: #f4f4f6;
-  --color-ink-muted: #a1a1aa;
-  --color-ink-faint: #52525b;
-
-  --color-accent: #6366f1;
-  --color-accent-hover: #818cf8;
-  --color-accent-subtle: rgba(99, 102, 241, 0.12);
-  --color-border: #232328;
-  --color-border-subtle: #18181c;
-  --color-border-glow: rgba(99, 102, 241, 0.25);
-
-  --color-emerald: #10b981;
-  --color-emerald-subtle: rgba(16, 185, 129, 0.12);
+  --background: #09090b;
+  --foreground: #fafafa;
+  --card: #09090b;
+  --card-foreground: #fafafa;
+  --popover: #09090b;
+  --popover-foreground: #fafafa;
+  --primary: #fafafa;
+  --primary-foreground: #18181b;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  --accent: #27272a;
+  --accent-foreground: #fafafa;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fafafa;
+  --border: #27272a;
+  --input: #27272a;
+  --ring: #d4d4d8;
 }
 
 html {
@@ -52,22 +55,16 @@ html {
 body {
   overflow-x: clip;
   font-family: var(--font-sans);
-  background-color: var(--color-paper);
-  color: var(--color-ink);
+  background-color: var(--background);
+  color: var(--foreground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Subtle architectural grid pattern */
-.bg-grid-pattern {
-  background-image: radial-gradient(var(--color-border) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-
 /* Custom Scrollbars */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -75,67 +72,20 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-border);
+  background: var(--border);
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-ink-faint);
+  background: var(--muted-foreground);
 }
 
-/* Accessible instant focus visible */
+/* Accessible focus visible */
 :focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--ring);
   outline-offset: 2px;
 }
 
-/* Keyframes */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(6px) translateX(-50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) translateX(-50%);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateY(-50%) translateX(-6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(-50%) translateX(0);
-  }
-}
-
-@keyframes pulseGlow {
-  0%, 100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.6;
-    transform: scale(1.15);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.15s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-fade-in-right {
-  animation: fadeInRight 0.15s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-beacon {
-  animation: pulseGlow 2.5s ease-in-out infinite;
-}
-
-/* Tabular figures for numbers */
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
