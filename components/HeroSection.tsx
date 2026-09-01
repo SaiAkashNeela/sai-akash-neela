@@ -10,8 +10,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ data }) => {
     <section id="hero" className="w-full">
       <div className="flex flex-col-reverse sm:flex-row items-center sm:items-start justify-between gap-6 sm:gap-8">
         <div className="flex-1 flex flex-col gap-3 text-center sm:text-left">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-zinc-900 dark:text-zinc-50">
-            Hi, I'm {data.name} 👋
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50 whitespace-nowrap">
+            Hi, I'm {data.fullName} 👋
           </h1>
           <p className="text-zinc-600 dark:text-zinc-400 text-base sm:text-lg max-w-[600px] leading-relaxed">
             AI & Cloud Operations Engineer who builds scalable cloud systems, native apps with Tauri & Rust, and automates real-world workflows.
@@ -30,7 +30,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ data }) => {
                 (e.currentTarget as HTMLElement).style.display = 'none';
               }}
             />
-            <span className="select-none">AN</span>
+            <span className="select-none">SAN</span>
           </div>
         </div>
       </div>

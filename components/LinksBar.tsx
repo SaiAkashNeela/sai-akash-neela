@@ -66,7 +66,7 @@ export const LinksBar: React.FC<LinksBarProps> = ({ data }) => {
         </a>
 
         <a
-          href={`https://${data.contact.resume}`}
+          href={data.contact.resume.startsWith('http') ? data.contact.resume : `https://${data.contact.resume}`}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-zinc-100 dark:hover:bg-white dark:text-zinc-900 transition-colors shadow-xs"

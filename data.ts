@@ -19,7 +19,7 @@ const generateGitHistory = () => {
 const getFavicon = (domain: string) => `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
 
 export const resumeData: ResumeData = {
-  name: "Akash",
+  name: "Sai Akash Neela",
   fullName: "Sai Akash Neela",
   title: "AI & Cloud Operations Engineer",
   contact: {
@@ -29,15 +29,31 @@ export const resumeData: ResumeData = {
     github: "github.com/saiakashneela",
     x: "x.com/TheSaiAkash",
     medium: "medium.com/@saiakashneela",
-    resume: "mega.nz/file/7mwEAKKC#hDrk6LGlggYFBEgZzm3EXU7spPxuABERVpp7zCjTckw",
+    resume: "mega.nz/file/2jI1jTDC#IG9NLMTH_pq4cbTwObM3CmygLnVwAUY3NtuWSXarzLs",
     location: "United Kingdom"
   },
   summary: "AI & DevOps Engineer obsessed with designing and deploying intelligent, self-healing systems. I leverage AI agents, MCP tooling, and modern cloud primitives (AWS, Cloudflare, Tauri/Rust) to build and operate high-performance software fast. Experienced in orchestrating RAG pipelines, REST/GraphQL APIs, distributed data stores, and automated DevOps workflows.",
   experience: [
     {
+      company: "Roxonn",
+      role: "Cloud Operations Engineer",
+      period: "2025 - Present",
+      logo: getFavicon("roxonn.com"),
+      link: "https://roxonn.com",
+      description: "Managing core cloud infrastructure and orchestration stack. Focused on maximizing uptime, automating operational toil, and supporting internal AI systems.",
+      highlights: [
+        "Architecting and managing AWS environments (ECS Fargate, EC2, RDS, S3) with 99.99% reliability.",
+        "Deploying and scaling containerized microservices using Dokploy and Coolify on dedicated bare-metal.",
+        "Engineering autonomous workflow automations with n8n, connecting observability with alerts.",
+        "Maintaining Cloudflare edge network infrastructure (Workers, R2 storage, Hyperdrive, Tunnels).",
+        "Building and integrating custom Model Context Protocol (MCP) servers for operational AI agents.",
+        "Supporting production AI pipelines and managing vector database indexes."
+      ]
+    },
+    {
       company: "Bell Soft LTD",
       role: "Lead DevOps Engineer",
-      period: "2024 - Present",
+      period: "2022 - 2024",
       logo: getFavicon("bellsoft.co.uk"),
       link: "https://bellsoft.co.uk",
       description: "Designed resilient CI/CD pipelines and orchestrated multi-cloud infrastructure across AWS and Azure environments.",
