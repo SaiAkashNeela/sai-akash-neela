@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, ArrowUpRight } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 import { EducationItem } from '../types';
 
 interface EducationSectionProps {
@@ -32,10 +32,6 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ education })
                   {edu.degree}
                 </div>
               </div>
-            </div>
-
-            <div className="text-xs tabular-nums text-zinc-500 dark:text-zinc-400 text-right shrink-0">
-              {edu.institution.includes('Hertfordshire') ? '2024 - 2025' : '2018 - 2022'}
             </div>
           </div>
         ))}

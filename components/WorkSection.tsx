@@ -1,22 +1,26 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronRight, Building2, CheckCircle2 } from 'lucide-react';
+import { ChevronDown, ChevronRight, Building2 } from 'lucide-react';
 import { Job } from '../types';
-import { cn } from '../lib/utils';
 
 interface WorkSectionProps {
   experience: Job[];
 }
 
 export const WorkSection: React.FC<WorkSectionProps> = ({ experience }) => {
-  const [openCompanies, setOpenCompanies] = useState<Record<string, boolean>>({
-    Roxonn: true, // Default first item open
-  });
+  const [openCompanies, setOpenCompanies] = useState<Record<string, boolean>>(() =>
+    Object.fromEntries(experience.map((job) => [job.company, true]))
+  );
+  const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
 
   const toggleOpen = (company: string) => {
     setOpenCompanies((prev) => ({
       ...prev,
       [company]: !prev[company],
     }));
+  };
+
+  const handleImageError = (company: string) => {
+    setImageErrors((prev) => ({ ...prev, [company]: true }));
   };
 
   return (
@@ -28,6 +32,7 @@ export const WorkSection: React.FC<WorkSectionProps> = ({ experience }) => {
       <div className="flex flex-col gap-4">
         {experience.map((work) => {
           const isOpen = Boolean(openCompanies[work.company]);
+          const hasLogo = Boolean(work.logo) && !imageErrors[work.company];
 
           return (
             <div
@@ -41,8 +46,17 @@ export const WorkSection: React.FC<WorkSectionProps> = ({ experience }) => {
                 aria-expanded={isOpen}
               >
                 <div className="flex items-center gap-3 sm:gap-4 flex-1 min-w-0 pr-2">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center shrink-0 shadow-xs">
-                    <Building2 size={18} className="text-zinc-600 dark:text-zinc-400" />
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 flex items-center justify-center shrink-0 shadow-xs overflow-hidden p-1.5">
+                    {hasLogo ? (
+                      <img
+                        src={work.logo}
+                        alt=""
+                        className="w-full h-full object-contain rounded-full"
+                        onError={() => handleImageError(work.company)}
+                      />
+                    ) : (
+                      <Building2 size={18} className="text-zinc-600 dark:text-zinc-400" />
+                    )}
                   </div>
 
                   <div className="flex-1 min-w-0">
@@ -60,9 +74,11 @@ export const WorkSection: React.FC<WorkSectionProps> = ({ experience }) => {
                   </div>
                 </div>
 
-                <div className="text-xs tabular-nums text-zinc-500 dark:text-zinc-400 text-right shrink-0">
-                  {work.company === 'Roxonn' ? '2025 - Present' : '2022 - 2024'}
-                </div>
+                {work.period && (
+                  <div className="text-xs tabular-nums text-zinc-500 dark:text-zinc-400 text-right shrink-0">
+                    {work.period}
+                  </div>
+                )}
               </button>
 
               {isOpen && (

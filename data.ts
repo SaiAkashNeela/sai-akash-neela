@@ -35,21 +35,11 @@ export const resumeData: ResumeData = {
   summary: "AI & DevOps Engineer obsessed with designing and deploying intelligent, self-healing systems. I leverage AI agents, MCP tooling, and modern cloud primitives (AWS, Cloudflare, Tauri/Rust) to build and operate high-performance software fast. Experienced in orchestrating RAG pipelines, REST/GraphQL APIs, distributed data stores, and automated DevOps workflows.",
   experience: [
     {
-      company: "Roxonn",
-      role: "Cloud Operations Engineer",
-      description: "Managing core cloud infrastructure and orchestration stack. Focused on maximizing uptime, automating operational toil, and supporting internal AI systems.",
-      highlights: [
-        "Architecting and managing AWS environments (ECS Fargate, EC2, RDS, S3) with 99.99% reliability.",
-        "Deploying and scaling containerized microservices using Dokploy and Coolify on dedicated bare-metal.",
-        "Engineering autonomous workflow automations with n8n, connecting observability with alerts.",
-        "Maintaining Cloudflare edge network infrastructure (Workers, R2 storage, Hyperdrive, Tunnels).",
-        "Building and integrating custom Model Context Protocol (MCP) servers for operational AI agents.",
-        "Supporting production AI pipelines and managing vector database indexes."
-      ]
-    },
-    {
       company: "Bell Soft LTD",
       role: "Lead DevOps Engineer",
+      period: "2024 - Present",
+      logo: getFavicon("bellsoft.co.uk"),
+      link: "https://bellsoft.co.uk",
       description: "Designed resilient CI/CD pipelines and orchestrated multi-cloud infrastructure across AWS and Azure environments.",
       highlights: [
         "Engineered end-to-end CI/CD pipelines using Jenkins, GitHub Actions, and Azure DevOps.",
@@ -62,6 +52,9 @@ export const resumeData: ResumeData = {
     {
       company: "Qapita Pte Ltd",
       role: "DevOps Engineer",
+      period: "2022 - 2024",
+      logo: getFavicon("qapita.com"),
+      link: "https://qapita.com",
       description: "Ensured seamless multi-region deployments and maintained database health for equity management platform.",
       highlights: [
         "Administered mission-critical databases (MongoDB, PostgreSQL) with automated point-in-time recovery.",
@@ -73,6 +66,9 @@ export const resumeData: ResumeData = {
     {
       company: "Uniquode",
       role: "Junior DevOps & Software Engineer",
+      period: "2021 - 2022",
+      logo: getFavicon("uniquode.io"),
+      link: "https://uniquode.io",
       description: "Started career developing full-stack features and learning cloud infrastructure management.",
       highlights: [
         "Wrote automation scripts in Python and Bash for routine ops workflows.",
@@ -136,14 +132,6 @@ export const resumeData: ResumeData = {
       link: "https://grabai.dev"
     },
     {
-      title: "Roxonn DSO",
-      description: "Decentralized Software Organization portal. Community governance, code contribution bounty distribution, and milestone tracking.",
-      status: "DSO",
-      tech: ["Next.js", "Cloudflare", "Smart Contracts"],
-      icon: getFavicon("roxonn.com"),
-      link: "https://roxonn.com"
-    },
-    {
       title: "StickyDraft",
       description: "Distraction-free, privacy-preserving browser scratchpad for ephemeral thoughts, markdown drafts, and code snippets.",
       status: "Open Source",
@@ -175,14 +163,6 @@ export const resumeData: ResumeData = {
       tech: ["React Native", "MongoDB", "Express", "Node"],
       icon: getFavicon("themadzone.com"),
       link: "https://themadzone.com"
-    },
-    {
-      title: "Arcatic",
-      description: "Software solutions and systems consulting practice delivering custom enterprise web applications and DevOps pipelines.",
-      status: "Agency",
-      tech: ["MERN Stack", "AWS", "DevOps"],
-      icon: getFavicon("arcatic.com"),
-      link: "https://arcatic.com"
     },
     {
       title: "KLN Traders",

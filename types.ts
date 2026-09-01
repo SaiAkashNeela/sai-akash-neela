@@ -12,6 +12,9 @@ export interface ContactInfo {
 export interface Job {
   company: string;
   role: string;
+  period?: string;
+  logo?: string;
+  link?: string;
   description: string;
   highlights: string[];
 }

@@ -65,12 +65,17 @@ export const App: React.FC = () => {
         <LinksBar data={resumeData} />
         <AboutSection summary={resumeData.summary} />
         <GitHubSection data={gitHistory} isLoading={isLoading} />
+        <SkillsSection skills={resumeData.skills} />
         <WorkSection experience={resumeData.experience} />
         <EducationSection education={resumeData.education} />
-        <SkillsSection skills={resumeData.skills} />
         <ProjectsSection projects={resumeData.projects} />
         <WritingSection posts={resumeData.blogPosts} />
         <ContactSection data={resumeData} />
+
+        {/* Footer */}
+        <footer className="text-center text-xs text-zinc-500 dark:text-zinc-400 pt-2 pb-6">
+          <p>© {new Date().getFullYear()} {resumeData.fullName}. All rights reserved.</p>
+        </footer>
       </main>
 
       {/* Signature Magic UI Bottom Dock */}
