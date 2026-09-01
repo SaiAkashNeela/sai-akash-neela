@@ -20,17 +20,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ data }) => {
 
         {/* Avatar */}
         <div className="shrink-0">
-          <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-2 border-zinc-200 dark:border-zinc-800 shadow-lg ring-4 ring-zinc-100 dark:ring-zinc-900 overflow-hidden bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center font-bold text-2xl text-zinc-600 dark:text-zinc-300">
+          <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-2 border-zinc-200 dark:border-zinc-800 shadow-lg ring-4 ring-zinc-100 dark:ring-zinc-900 overflow-hidden bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
             <img
               src="https://github.com/saiakashneela.png"
               alt={data.fullName}
               className="w-full h-full object-cover"
-              onError={(e) => {
-                // Fallback to initials if image fails
-                (e.currentTarget as HTMLElement).style.display = 'none';
-              }}
             />
-            <span className="select-none">SAN</span>
           </div>
         </div>
       </div>

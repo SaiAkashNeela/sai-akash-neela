@@ -67,8 +67,8 @@ export const App: React.FC = () => {
         <GitHubSection data={gitHistory} isLoading={isLoading} />
         <SkillsSection skills={resumeData.skills} />
         <WorkSection experience={resumeData.experience} />
-        <EducationSection education={resumeData.education} />
         <ProjectsSection projects={resumeData.projects} />
+        <EducationSection education={resumeData.education} />
         <WritingSection posts={resumeData.blogPosts} />
         <ContactSection data={resumeData} />
 

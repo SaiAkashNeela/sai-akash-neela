@@ -54,7 +54,7 @@ export const resumeData: ResumeData = {
       company: "Bell Soft LTD",
       role: "Lead DevOps Engineer",
       period: "2022 - 2024",
-      logo: getFavicon("bellsoft.co.uk"),
+      logo: "https://bellsoft.co.uk/favicon.png",
       link: "https://bellsoft.co.uk",
       description: "Designed resilient CI/CD pipelines and orchestrated multi-cloud infrastructure across AWS and Azure environments.",
       highlights: [
@@ -83,8 +83,8 @@ export const resumeData: ResumeData = {
       company: "Uniquode",
       role: "Junior DevOps & Software Engineer",
       period: "2021 - 2022",
-      logo: getFavicon("uniquode.io"),
-      link: "https://uniquode.io",
+      logo: getFavicon("uniquode.in"),
+      link: "https://uniquode.in",
       description: "Started career developing full-stack features and learning cloud infrastructure management.",
       highlights: [
         "Wrote automation scripts in Python and Bash for routine ops workflows.",
@@ -132,14 +132,6 @@ export const resumeData: ResumeData = {
       highlightText: "Built for automated end-to-end testing with zero spam, instant webhook events, and clean API access."
     },
     {
-      title: "ZeroForms",
-      description: "Serverless form backend engine for static sites. Point standard HTML form actions to an endpoint and receive clean, spam-filtered submissions instantly.",
-      status: "Live",
-      tech: ["Serverless", "AWS Lambda", "Vue", "API Gateway"],
-      icon: getFavicon("zeroforms.dev"),
-      link: "https://zeroforms.dev"
-    },
-    {
       title: "GrabAI",
       description: "A meticulously curated radar and directory indexing top AI models, developer tools, and workflow automation platforms.",
       status: "Live",
@@ -161,7 +153,7 @@ export const resumeData: ResumeData = {
       description: "Digital design and engineering studio crafting pixel-perfect web interfaces and bespoke software systems for startups.",
       status: "Live",
       tech: ["WordPress", "PHP", "Tailwind", "Cloudflare"],
-      icon: getFavicon("geeksdesigns.com"),
+      icon: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"><rect width="64" height="64" rx="14" fill="%230f172a"/><path d="M18 22l10 10-10 10M32 42h14" stroke="%23ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>',
       link: "https://geeksdesigns.com"
     },
     {
@@ -179,14 +171,6 @@ export const resumeData: ResumeData = {
       tech: ["React Native", "MongoDB", "Express", "Node"],
       icon: getFavicon("themadzone.com"),
       link: "https://themadzone.com"
-    },
-    {
-      title: "KLN Traders",
-      description: "Modern wholesale digital commerce platform facilitating automated inventory synchronization and order management.",
-      status: "Live",
-      tech: ["Shopify", "Liquid", "JavaScript"],
-      icon: getFavicon("klntraders.com"),
-      link: "https://klntraders.com"
     },
     {
       title: "Telugu Film Chamber",
