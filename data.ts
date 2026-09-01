@@ -54,8 +54,8 @@ export const resumeData: ResumeData = {
       company: "Bell Soft LTD",
       role: "Lead DevOps Engineer",
       period: "2022 - 2024",
-      logo: "https://bellsoft.co.uk/favicon.png",
-      link: "https://bellsoft.co.uk",
+      logo: "/bellsoft-logo.png",
+      link: "https://www.bellsoft.co.uk",
       description: "Designed resilient CI/CD pipelines and orchestrated multi-cloud infrastructure across AWS and Azure environments.",
       highlights: [
         "Engineered end-to-end CI/CD pipelines using Jenkins, GitHub Actions, and Azure DevOps.",
