@@ -15,7 +15,7 @@ export const DockNavbar: React.FC<DockNavbarProps> = ({ data, darkMode, onToggle
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-4 z-50">
       <nav 
-        className="pointer-events-auto relative h-14 p-1.5 sm:p-2 w-fit mx-auto flex items-center gap-1 sm:gap-2 border border-zinc-200/90 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-3xl shadow-xl rounded-full transition-colors"
+        className="pointer-events-auto relative h-14 p-1 sm:p-2 w-fit max-w-[calc(100vw-1rem)] mx-auto flex items-center gap-0.5 sm:gap-2 border border-zinc-200/90 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-3xl shadow-xl rounded-full transition-colors overflow-x-auto no-scrollbar"
         aria-label="Bottom quick actions dock"
       >
         {/* Navigation Anchors */}
