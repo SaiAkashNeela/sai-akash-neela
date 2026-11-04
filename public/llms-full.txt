@@ -8,7 +8,7 @@ Website: https://saiakashneela.com/ · Last updated: 2026-11-04
 
 I'm a UK-based AI & cloud engineer with 6+ years of building and running production systems. Today I'm the Senior AI Engineer at Levocell, where I own the architecture end to end: DevOps, full-stack development and database administration for connected battery and solar systems talking over MQTT and NB-IoT, with AI on top that learns how energy is used.
 
-Before that I ran cloud operations at Roxonn and led DevOps at Bell Soft, working across AWS, Azure, Cloudflare, Kubernetes and Terraform. I lean heavily on AI agents, RAG pipelines and MCP servers to ship faster, and I build my own products on the side, from native Swift and Rust desktop apps to voice AI and privacy-first web tools. I'm also Co-Founder & CTO of GrabAI and founder of PixelMercury.
+Before that I ran cloud operations at Roxonn and led DevOps at Bell Soft. I know AWS across almost all of its services, Cloudflare end to end, and networking from DNS and VPCs to VPNs and Zero Trust, alongside Azure, Kubernetes, Terraform and Doppler. I lean heavily on AI agents, RAG pipelines and MCP servers to ship faster, and I build my own products on the side, from native Swift and Rust desktop apps to voice AI and privacy-first web tools. I'm also Co-Founder & CTO of GrabAI and founder of PixelMercury.
 
 ## Contact
 
@@ -82,7 +82,10 @@ Started my career across DevOps and software development: deployments, automatio
 
 - AI & Agents: LLM Apps (OpenAI, Claude, Gemini), AI Agents, Voice AI, RAG Pipelines, MCP Servers, Vector Databases, n8n Automation
 - IoT & Energy: IoT Architecture, MQTT, NB-IoT, Device Telemetry, Battery Energy Storage (BESS), Solar & Smart Energy
-- Cloud & DevOps: AWS (ECS, EC2, RDS, S3, Lambda), Azure, Cloudflare (Workers, R2, Zero Trust, Tunnels), Docker, Kubernetes (EKS), Terraform, CI/CD (GitHub Actions, Jenkins, Azure DevOps), Dokploy & Coolify, Hetzner, Railway, Prometheus & Grafana, New Relic, Snyk
+- AWS (end to end): Compute (EC2, ECS, Fargate, EKS, Lambda), Storage (S3, EFS, EBS, FSx), Databases (RDS, Aurora, DynamoDB, ElastiCache), Networking (VPC, Route 53, CloudFront, ELB, Transit Gateway), Security (IAM, KMS, Secrets Manager, GuardDuty, Inspector, WAF), Messaging (SQS, SNS, EventBridge), Ops (CloudWatch, CloudFormation, Systems Manager, Backup, DataSync)
+- Cloudflare (end to end): Workers, Pages, R2, D1, KV, Durable Objects, Queues, Workers AI, Hyperdrive, DNS & CDN, WAF & DDoS, Zero Trust & Access, Tunnels
+- Networking: Network Engineering, TCP/IP & Subnetting, DNS, VPC Design, VPN & Site-to-Site, Load Balancing, Firewalls, Zero Trust Networking
+- DevOps & Platforms: Azure, Docker, Kubernetes (EKS), Terraform, CI/CD (GitHub Actions, Jenkins, Azure DevOps), Doppler Secrets, Dokploy & Coolify, Hetzner, Railway, Prometheus & Grafana, New Relic, Snyk
 - Data: Database Administration, PostgreSQL, MongoDB, Redis, SQL Server, SQLite
 - Engineering: System Architecture, TypeScript, React, Next.js, Node.js, Bun, Python, Go, Rust, Tauri, Swift & SwiftUI, React Native, REST & GraphQL APIs, Stripe Payments
 
@@ -387,7 +390,7 @@ His live products include ArivuLabs (AI voice agents), PilotFox (cookieless anal
 
 ### Which technologies does Sai Akash Neela specialise in?
 
-AI agents, RAG and MCP servers; IoT over MQTT and NB-IoT; AWS, Azure and Cloudflare; Docker, Kubernetes and Terraform; PostgreSQL, MongoDB and Redis; and TypeScript, React, Node.js, Python, Go, Rust, Tauri and Swift.
+AI agents, RAG and MCP servers; IoT over MQTT and NB-IoT; AWS across almost all services; Cloudflare end to end (Workers, R2, D1, KV, Durable Objects, Zero Trust, Tunnels); network engineering; Azure, Docker, Kubernetes, Terraform and Doppler; PostgreSQL, MongoDB and Redis; and TypeScript, React, Node.js, Python, Go, Rust, Tauri and Swift.
 
 ### Is BucketStack free and open source?
 
