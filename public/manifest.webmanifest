@@ -1,23 +1,19 @@
 {
-  "name": "Sai Akash Neela | Portfolio",
+  "name": "Sai Akash Neela | Senior AI Engineer",
   "short_name": "Sai Akash",
-  "description": "AI & Cloud Operations Engineer portfolio, projects, and notes.",
+  "description": "Portfolio, projects and writing of Sai Akash Neela, Senior AI Engineer at Levocell.",
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
+  "lang": "en-GB",
   "display": "standalone",
   "background_color": "#09090b",
-  "theme_color": "#4f46e5",
+  "theme_color": "#09090b",
+  "categories": ["portfolio", "technology", "developer"],
   "icons": [
-    {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
   ]
 }

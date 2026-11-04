@@ -1,0 +1,74 @@
+# Sai Akash Neela
+
+> Sai Akash Neela is a UK-based Senior AI Engineer at Levocell (since Aug 2026) with 6+ years in AI, cloud and DevOps. He architects battery, IoT (MQTT, NB-IoT) and AI platforms, owns DevOps, full-stack development and database administration, is Co-Founder & CTO of GrabAI and founder of PixelMercury, and builds indie products such as ArivuLabs, PilotFox, BucketStack and MacKitty.
+
+Key facts:
+
+- Website: https://saiakashneela.com/ (also https://saiakash.dev)
+- Current role: Senior AI Engineer at Levocell (https://levocell.ai), Aug 2026 – present
+- Previous: AI & Cloud Operations Engineer at Roxonn (Aug 2025 – Aug 2026); Lead DevOps Engineer at Bell Soft LTD (Sep 2022 – Aug 2025); DevOps Engineer at Qapita (Sep 2021 – Sep 2022); Junior DevOps & Software Engineer at Uniquode (Aug 2020 – Sep 2021)
+- Education: Master's in Advanced Computer Science (University of Hertfordshire); Bachelor's in Computer Science with Cloud Computing (KL University)
+- Contact: saiakashneela@outlook.com, hello@saiakash.dev, X @TheSaiAkash, LinkedIn https://www.linkedin.com/in/saiakashneela, GitHub https://github.com/SaiAkashNeela
+- Resume: https://saiakashneela.com/resume/Sai-Akash-Neela-Resume.pdf (PDF), https://saiakashneela.com/resume/Sai-Akash-Neela-Resume.docx (Word)
+
+## Projects
+
+- [ArivuLabs](https://arivulabs.ai): AI voice agents that answer and make a business's calls in 70+ languages, built from its own website, plus ArivuStudio for AI video, ads, dubbing and voice.
+- [PilotFox](https://pilotfox.app): Cookieless web and product analytics that links revenue from Stripe, Dodo Payments or Polar to the visits behind it, with funnels, session replay, an API and MCP.
+- [BucketStack](https://bucketstack.app): Free, open-source native S3 file manager for macOS, Windows and Linux. Works with AWS S3, Cloudflare R2, MinIO, Wasabi, Backblaze B2 and more. Source: https://github.com/SaiAkashNeela/bucketstack
+- [MacKitty](https://mackitty.com): A featherweight, 100% native Swift Mac cleaner that safely reclaims space from developer caches and build clutter, without ever touching personal files. Source: https://github.com/SaiAkashNeela/mackitty
+- [CheckEmail.dev](https://checkemail.dev): Zero-dependency, MIT-licensed email validation: syntax, MX records, 9,000+ disposable domains, aliases and a confidence score. Node.js, Bun, Docker or browser. Source: https://github.com/SaiAkashNeela/checkemail
+- [PDFamaze](https://pdfamaze.com): 51 free PDF tools that run entirely in your browser: sign, fill, OCR, redact, merge, split, compress and convert. Files never leave your device. Source: https://github.com/SaiAkashNeela/pdfamaze-studio
+- [OpenFlareStack](https://openflarestack.com): A catalog of 300+ open-source, self-hosted apps you can deploy to your own Cloudflare account in one click, ranked every night. Source: https://github.com/SaiAkashNeela/openflarestack
+- [Gita Sadhana](https://gitasadhana.com): A free Bhagavad Gita study companion: 18 chapters and 701 verses in Sanskrit with translation and reflections in 12 languages, verse audio and Gita AI.
+- [StickyDraft](https://stickydraft.com): An instant sticky-notes board in the browser. No signup: notes stay on your device, with optional Google or GitHub sign-in to sync. Source: https://github.com/SaiAkashNeela/stickydraft
+- [TopTheBid](https://topthebid.com): A public leaderboard ranked purely by money. Pay from $1 to list your X handle and website, then outbid the spot above you. No accounts.
+- [GrabAI](https://grabai.co.uk) (Co-Founder & CTO): UK AI engineering company in Bristol and London building AI-powered products and automation: GrabWeb, GrabWork, BrickPay and Zeroforms.
+- [PixelMercury](https://pixelmercury.com) (Founder & Lead Systems Architect): Digital engineering studio that designs, builds and scales products end to end: web, AI systems, commerce and cloud infrastructure.
+- [GeeksDesigns](https://geeksdesigns.com): A single engineering partner for web design, custom apps, Shopify e-commerce, AWS cloud infrastructure and automated DevSecOps.
+
+## Coming soon
+
+- [Jumpify](https://jumpify.link): An interactive 3D globe and 2D map for the ISS orbit, earthquakes, natural events, world radio and tap-anywhere weather.
+- [DueSoon](https://duesoon.app): in development.
+- [BotForm](https://botform.app): in development.
+- [PrimePay](https://primepay.in): in development.
+- [AmazingTricks](https://amazingtricks.in): in development.
+
+## Client work
+
+- [Levocell](https://levocell.ai): Smart energy: plug-in solar, home and commercial battery storage, modular AI data centres.
+- [LT Smart Group](https://ltsmart.com): IoT, critical power, renewable energy, smart glass and electrical services group.
+- [Priviglaze](https://priviglaze.com): Switchable smart glass and smart film for homes, offices and hospitality in the UK.
+- [Metchu Power](https://metchu.co.uk): Independent energy consultancy for renewables, battery storage, EV charging and data centres.
+- [Bell Soft LTD](https://bellsoft.co.uk): UK SAP consultancy and enterprise software services.
+- [Roxonn](https://roxonn.com): Decentralised contribution platform for developers.
+- [Telugu Film Chamber of Commerce](https://telugufilmchamber.in): Official portal of the TFCC, home of its Anti Video Piracy Cell and memberships.
+- [Retour Solutions](https://retoursolutions.com): Real-time hospital feedback management system for better patient care.
+- [Sudeha Global](https://sudehaglobal.com): IT solutions: web, mobile apps, business automation and AI applications.
+- [I Sell My Own Home](https://isellmyownhome.com): For-sale-by-owner guide, 21 Steps to Success, with online card payments.
+- [Khata Assist](https://khataassist.in): E-Khata and property compliance consultancy for Bangalore property owners.
+- [KLN Traders](https://klntraders.com): Custom packaging: mailer boxes, courier bags, tapes and stickers, shipped across India.
+- [WellHouse](https://wellhouse.co.in): Smart, affordable shared living spaces in Chennai.
+- [TheMadZone](https://themadzone.com): Fashion e-commerce store.
+- [ZingDelights](https://zingdelights.com): Food ordering brand.
+
+## Writing
+
+- [PilotFox: Why I Built Analytics That Follow the Money](https://saiakashneela.com/#why-i-built-pilotfox) (2026-11-02): Every indie product I run had the same blind spot. My analytics told me how many people visited, and Stripe told me how much money came in, but nothing connected the two. I could see a spike from Hacker News and a spike in sales in the same week and still not know whether one caused the other.
+- [MacKitty: A Native Mac Cleaner I Can Actually Trust](https://saiakashneela.com/#why-i-built-mackitty) (2026-09-21): My MacBook kept running out of space, and it was never my photos. It was Xcode DerivedData, browser caches, the npm cache and app logs quietly piling up from years of builds.
+- [OpenFlareStack: Stop Renting Software, Run It on Your Own Cloudflare](https://saiakashneela.com/#why-i-built-openflarestack) (2026-09-14): I spend a lot of time on Cloudflare Workers, and I kept finding brilliant open-source apps built for it scattered across GitHub: URL shorteners, uptime monitors, temporary email, analytics, even full CMSs. There was no single place to discover them.
+- [TopTheBid: A Leaderboard Where Money Is the Only Rule](https://saiakashneela.com/#why-i-built-topthebid) (2026-08-30): TopTheBid started as a weekend experiment and a bit of a joke: what if a leaderboard had exactly one rule, and whoever pays the most sits on top?
+- [ArivuLabs: Giving Every Business a Voice Agent and an Ad](https://saiakashneela.com/#why-i-built-arivulabs) (2026-08-12): Small businesses miss calls. A clinic, a salon or a local shop can't staff a phone line around the clock, and every missed call is a customer who rings the next place on the list. Those same businesses rarely have the budget for a proper video ad either.
+- [Gita Sadhana: Building a Calm Place to Read the Bhagavad Gita](https://saiakashneela.com/#why-i-built-gita-sadhana) (2026-06-18): The Bhagavad Gita is a text I keep coming back to, but most places to read it online are cluttered with ads, split across languages, or hard to read on a phone.
+- [Solving the S3 Headache: Why I Built BucketStack](https://saiakashneela.com/#why-i-built-bucketstack) (2026-02-19): I honestly dislike the AWS console for day-to-day file management. It's slow and multi-layered, and finding one nested object feels like searching for a needle in a haystack. I also split my week between macOS, Windows and Linux, so a Windows-only S3 browser was never going to cut it.
+- [StickyDraft: Open. Write. Done.](https://saiakashneela.com/#why-i-built-stickydraft) (2026-02-03): Half the thoughts in my working day are throwaway: a command I need in five minutes, a name for a variable, a to-do I'll forget by lunch. Opening a full note-taking app for that felt like overkill, and most of them want an account before you can type a word.
+- [Why I Built checkemail: Email Validation Without the Monthly Bill](https://saiakashneela.com/#why-i-built-checkemail) (2026-01-10): Every sign-up form I build eventually needs the same thing: catch typos, block throwaway inboxes and stop fake accounts without punishing real users. The usual answer is a paid validation API that bills per check and sees every address you send it.
+- [PDFamaze: PDF Tools That Never Upload Your Files](https://saiakashneela.com/#why-i-built-pdfamaze) (2025-10-27): Signing a rental agreement, merging bank statements, redacting a passport scan: these are exactly the documents I don't want to upload to a random website just to rotate a page.
+- [Integrating Model Context Protocol (MCP) with Claude for DevOps](https://saiakashneela.com/#mcp-for-devops) (2025-10-01): The Model Context Protocol (MCP) fundamentally changes AI assistance. I built a specialised MCP server that bridges Claude Desktop directly with Cloudflare Workers and Prometheus metrics.
+- [Why I Migrated from Complex Kubernetes to Coolify for Solo Projects](https://saiakashneela.com/#kubernetes-to-coolify) (2025-09-19): For years I insisted on deploying everything onto production-grade Kubernetes with Helm charts and ingress controllers. That's essential for large enterprises, but for independent builders and small services it adds an enormous cognitive tax.
+
+## Optional
+
+- [Full profile, experience and articles in one file](https://saiakashneela.com/llms-full.txt)
+- [Sitemap](https://saiakashneela.com/sitemap.xml)

@@ -1,0 +1,37 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+  Link: </llms.txt>; rel="alternate"; type="text/plain", </sitemap.xml>; rel="sitemap"
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/styles.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/app.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/*.png
+  Cache-Control: public, max-age=604800
+
+/favicon.*
+  Cache-Control: public, max-age=604800
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/resume/*
+  Cache-Control: public, max-age=3600
+  X-Robots-Tag: index, follow

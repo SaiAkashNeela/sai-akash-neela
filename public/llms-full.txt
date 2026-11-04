@@ -1,0 +1,402 @@
+# Sai Akash Neela — full profile
+
+> I architect the battery, IoT and AI platforms behind smart energy, build scalable cloud systems, native apps and indie products, and automate real-world workflows.
+
+Website: https://saiakashneela.com/ · Last updated: 2026-11-04
+
+## About
+
+I'm a UK-based AI & cloud engineer with 6+ years of building and running production systems. Today I'm the Senior AI Engineer at Levocell, where I own the architecture end to end: DevOps, full-stack development and database administration for connected battery and solar systems talking over MQTT and NB-IoT, with AI on top that learns how energy is used.
+
+Before that I ran cloud operations at Roxonn and led DevOps at Bell Soft, working across AWS, Azure, Cloudflare, Kubernetes and Terraform. I lean heavily on AI agents, RAG pipelines and MCP servers to ship faster, and I build my own products on the side, from native Swift and Rust desktop apps to voice AI and privacy-first web tools. I'm also Co-Founder & CTO of GrabAI and founder of PixelMercury.
+
+## Contact
+
+- Email: saiakashneela@outlook.com, hello@saiakash.dev, hello@saiakashneela.com
+- Phone: +44 7767934364
+- Location: United Kingdom
+- LinkedIn: https://www.linkedin.com/in/saiakashneela
+- GitHub: https://github.com/SaiAkashNeela
+- X: https://x.com/TheSaiAkash
+- Medium: https://medium.com/@saiakashneela
+- Resume: https://saiakashneela.com/resume/Sai-Akash-Neela-Resume.pdf and https://saiakashneela.com/resume/Sai-Akash-Neela-Resume.docx
+
+## Work experience
+
+### Senior AI Engineer, Levocell (Aug 2026 – Present)
+
+Levocell combines renewable energy, battery storage and AI, from plug-in solar and home batteries to commercial battery energy storage (BESS) and modular AI data centres. As the senior engineer I'm the architecture lead and look after DevOps, full-stack development and database administration.
+
+- Architecting Levocell's connected-energy platform end to end: device connectivity, cloud, data and AI layers.
+- Designing IoT connectivity for battery and solar systems over MQTT and NB-IoT, from device telemetry ingestion to real-time monitoring.
+- Building AI-driven energy management that learns usage patterns and optimises battery charging around electricity tariffs.
+- Owning DevOps: cloud infrastructure, CI/CD, containers, observability, backups and security across environments.
+- Leading full-stack development of web apps, dashboards and APIs, and administering production databases.
+- Setting engineering standards and making the architecture calls across battery, IoT and AI products.
+- Website: https://levocell.ai
+
+### AI & Cloud Operations Engineer, Roxonn (Aug 2025 – Aug 2026)
+
+Ran the cloud infrastructure and automation stack behind Roxonn's apps and internal systems, keeping everything fast, reliable and scalable while automating deployments, workflows and AI components.
+
+- Managed AWS environments (ECS Fargate, EC2, RDS, S3, IAM, Route 53) with stable deployments and secure configuration.
+- Deployed and scaled containerised services with Dokploy and Coolify, plus Railway and Hetzner for extra environments.
+- Built workflow automation with n8n, connecting internal systems, third-party tools and custom APIs.
+- Maintained Cloudflare infrastructure: Workers, R2, Zero Trust, Tunnels and custom caching rules.
+- Used MCP servers and custom scripts to automate deployments, backups, logs, health checks and provisioning.
+- Supported RAG-based internal AI systems by managing vector indexes and data ingestion pipelines.
+- Website: https://roxonn.com
+
+### Lead DevOps Engineer, Bell Soft LTD (Sep 2022 – Aug 2025)
+
+Designed resilient CI/CD pipelines and ran hybrid multi-cloud infrastructure across AWS and Azure.
+
+- Built CI/CD pipelines with Jenkins, GitHub Actions and Azure DevOps, including Docker builds to ECR and deploys to EKS.
+- Ran production Kubernetes (EKS) with Prometheus, Grafana, New Relic APM and Sumo Logic monitoring.
+- Wrote Infrastructure as Code with Terraform and AWS CloudFormation.
+- Automated vulnerability scanning with Snyk and Mend, and patching with AWS Systems Manager and PowerShell.
+- Migrated data between Amazon S3 and Azure Blob Storage with AWS DataSync, and led the move to DACPAC for SQL deployments.
+- Handled SOC 2 compliance requirements, backups and secure releases.
+- Website: https://www.bellsoft.co.uk
+
+### DevOps Engineer, Qapita Pte Ltd (Sep 2021 – Sep 2022)
+
+Kept deployments, monitoring and databases healthy for an equity management platform.
+
+- Administered MongoDB, SQL and PostgreSQL databases with automated backups and query tuning.
+- Containerised microservices with Docker and Kubernetes for high availability.
+- Configured CI/CD pipelines with automated security checks (Snyk, Mend).
+- Worked across AWS (EC2, RDS, S3, SES, Route 53, Elastic Beanstalk, CodePipeline, EKS) and managed DNS and email.
+- Website: https://qapita.com
+
+### Junior DevOps & Software Engineer, Uniquode (Aug 2020 – Sep 2021)
+
+Started my career across DevOps and software development: deployments, automation and feature work.
+
+- Wrote Python and Bash automation for routine ops and deployments.
+- Built frontend features with HTML, CSS, JavaScript and React, connected to backend APIs.
+- Supported AWS (EC2, S3, IAM, RDS backups), Firebase and DigitalOcean environments.
+- Website: https://uniquode.in
+
+## Skills
+
+- AI & Agents: LLM Apps (OpenAI, Claude, Gemini), AI Agents, Voice AI, RAG Pipelines, MCP Servers, Vector Databases, n8n Automation
+- IoT & Energy: IoT Architecture, MQTT, NB-IoT, Device Telemetry, Battery Energy Storage (BESS), Solar & Smart Energy
+- Cloud & DevOps: AWS (ECS, EC2, RDS, S3, Lambda), Azure, Cloudflare (Workers, R2, Zero Trust, Tunnels), Docker, Kubernetes (EKS), Terraform, CI/CD (GitHub Actions, Jenkins, Azure DevOps), Dokploy & Coolify, Hetzner, Railway, Prometheus & Grafana, New Relic, Snyk
+- Data: Database Administration, PostgreSQL, MongoDB, Redis, SQL Server, SQLite
+- Engineering: System Architecture, TypeScript, React, Next.js, Node.js, Bun, Python, Go, Rust, Tauri, Swift & SwiftUI, React Native, REST & GraphQL APIs, Stripe Payments
+
+## Projects
+
+### ArivuLabs (Live)
+
+- URL: https://arivulabs.ai
+- Tags: Voice AI, AI Agents, Telephony, 70+ Languages, Generative Media
+
+AI voice agents that answer and make a business's calls in 70+ languages, built from its own website, plus ArivuStudio for AI video, ads, dubbing and voice.
+
+### PilotFox (Live)
+
+- URL: https://pilotfox.app
+- Tags: Analytics, Revenue Attribution, Stripe, REST API, MCP
+
+Cookieless web and product analytics that links revenue from Stripe, Dodo Payments or Polar to the visits behind it, with funnels, session replay, an API and MCP.
+
+### BucketStack (Open Source)
+
+- URL: https://bucketstack.app
+- Source: https://github.com/SaiAkashNeela/bucketstack
+- Tags: Rust, Tauri 2, React 19, TypeScript, Tailwind
+
+Free, open-source native S3 file manager for macOS, Windows and Linux. Works with AWS S3, Cloudflare R2, MinIO, Wasabi, Backblaze B2 and more.
+
+### MacKitty (Open Source)
+
+- URL: https://mackitty.com
+- Source: https://github.com/SaiAkashNeela/mackitty
+- Tags: Swift, SwiftUI, macOS, Apple Silicon
+
+A featherweight, 100% native Swift Mac cleaner that safely reclaims space from developer caches and build clutter, without ever touching personal files.
+
+### CheckEmail.dev (Open Source)
+
+- URL: https://checkemail.dev
+- Source: https://github.com/SaiAkashNeela/checkemail
+- Tags: Node.js, Bun, Docker, npm, DNS
+
+Zero-dependency, MIT-licensed email validation: syntax, MX records, 9,000+ disposable domains, aliases and a confidence score. Node.js, Bun, Docker or browser.
+
+### PDFamaze (Open Source)
+
+- URL: https://pdfamaze.com
+- Source: https://github.com/SaiAkashNeela/pdfamaze-studio
+- Tags: pdf-lib, pdf.js, WebAssembly, Privacy-first
+
+51 free PDF tools that run entirely in your browser: sign, fill, OCR, redact, merge, split, compress and convert. Files never leave your device.
+
+### OpenFlareStack (Open Source)
+
+- URL: https://openflarestack.com
+- Source: https://github.com/SaiAkashNeela/openflarestack
+- Tags: Cloudflare Workers, Self-hosting, Open Source, Directory
+
+A catalog of 300+ open-source, self-hosted apps you can deploy to your own Cloudflare account in one click, ranked every night.
+
+### Gita Sadhana (Live)
+
+- URL: https://gitasadhana.com
+- Tags: 12 Languages, Audio, AI, Education
+
+A free Bhagavad Gita study companion: 18 chapters and 701 verses in Sanskrit with translation and reflections in 12 languages, verse audio and Gita AI.
+
+### StickyDraft (Open Source)
+
+- URL: https://stickydraft.com
+- Source: https://github.com/SaiAkashNeela/stickydraft
+- Tags: PWA, Local-first, Offline, Productivity
+
+An instant sticky-notes board in the browser. No signup: notes stay on your device, with optional Google or GitHub sign-in to sync.
+
+### TopTheBid (Live)
+
+- URL: https://topthebid.com
+- Tags: Stripe, Leaderboard, No accounts
+
+A public leaderboard ranked purely by money. Pay from $1 to list your X handle and website, then outbid the spot above you. No accounts.
+
+### GrabAI (Company)
+
+- URL: https://grabai.co.uk
+- Role: Co-Founder & CTO
+- Tags: AI Infrastructure, Workflow Automation, Payments
+
+UK AI engineering company in Bristol and London building AI-powered products and automation: GrabWeb, GrabWork, BrickPay and Zeroforms.
+
+### PixelMercury (Studio)
+
+- URL: https://pixelmercury.com
+- Role: Founder & Lead Systems Architect
+- Tags: Full-stack, AI Systems, Cloud, Commerce
+
+Digital engineering studio that designs, builds and scales products end to end: web, AI systems, commerce and cloud infrastructure.
+
+### GeeksDesigns (Studio)
+
+- URL: https://geeksdesigns.com
+- Tags: Web Design, E-commerce, Mobile Apps, DevSecOps
+
+A single engineering partner for web design, custom apps, Shopify e-commerce, AWS cloud infrastructure and automated DevSecOps.
+
+## Coming soon
+
+- Jumpify (https://jumpify.link): An interactive 3D globe and 2D map for the ISS orbit, earthquakes, natural events, world radio and tap-anywhere weather.
+- DueSoon (https://duesoon.app): in development.
+- BotForm (https://botform.app): in development.
+- PrimePay (https://primepay.in): in development.
+- AmazingTricks (https://amazingtricks.in): in development.
+
+## Client work
+
+- Levocell (https://levocell.ai): Smart energy: plug-in solar, home and commercial battery storage, modular AI data centres.
+- LT Smart Group (https://ltsmart.com): IoT, critical power, renewable energy, smart glass and electrical services group.
+- Priviglaze (https://priviglaze.com): Switchable smart glass and smart film for homes, offices and hospitality in the UK.
+- Metchu Power (https://metchu.co.uk): Independent energy consultancy for renewables, battery storage, EV charging and data centres.
+- Bell Soft LTD (https://bellsoft.co.uk): UK SAP consultancy and enterprise software services.
+- Roxonn (https://roxonn.com): Decentralised contribution platform for developers.
+- Telugu Film Chamber of Commerce (https://telugufilmchamber.in): Official portal of the TFCC, home of its Anti Video Piracy Cell and memberships.
+- Retour Solutions (https://retoursolutions.com): Real-time hospital feedback management system for better patient care.
+- Sudeha Global (https://sudehaglobal.com): IT solutions: web, mobile apps, business automation and AI applications.
+- I Sell My Own Home (https://isellmyownhome.com): For-sale-by-owner guide, 21 Steps to Success, with online card payments.
+- Khata Assist (https://khataassist.in): E-Khata and property compliance consultancy for Bangalore property owners.
+- KLN Traders (https://klntraders.com): Custom packaging: mailer boxes, courier bags, tapes and stickers, shipped across India.
+- WellHouse (https://wellhouse.co.in): Smart, affordable shared living spaces in Chennai.
+- TheMadZone (https://themadzone.com): Fashion e-commerce store.
+- ZingDelights (https://zingdelights.com): Food ordering brand.
+
+## Education
+
+- Master's in Advanced Computer Science, University of Hertfordshire
+- Bachelor's in Computer Science with Cloud Computing Specialisation, KL University
+
+## Certifications
+
+- AWS Solutions Architect Associate (Amazon Web Services / Simplilearn)
+- Salesforce Certified Administrator (Salesforce)
+- RPA Professional (Automation Anywhere)
+- Java (Wipro)
+
+## Publication
+
+- Project paper published in IEEE: IEEE Xplore, Document 9441974 (https://ieeexplore.ieee.org/document/9441974)
+
+## Articles
+
+### PilotFox: Why I Built Analytics That Follow the Money
+
+Published 2026-11-02 · https://saiakashneela.com/#why-i-built-pilotfox
+
+Every indie product I run had the same blind spot. My analytics told me how many people visited, and Stripe told me how much money came in, but nothing connected the two. I could see a spike from Hacker News and a spike in sales in the same week and still not know whether one caused the other.
+
+I didn't want to bolt another cookie banner onto every site either. Most of my projects are small, privacy-first tools, and asking visitors to accept tracking cookies just to read a landing page felt wrong.
+
+So PilotFox does both jobs in one place. It is cookieless web and product analytics: add one script tag, connect Stripe, Dodo Payments or Polar with a read-only key, and every payment is linked back to the visit, channel and campaign that brought the buyer in. On top of that sit funnels, goals, retention, session replay, web vitals, Google Search Console data and affiliate tracking with ?ref= links.
+
+Because I live inside AI tools all day, PilotFox also ships a REST API with an OpenAPI document and an MCP server, so I can ask an assistant which channel brought paying customers this month instead of clicking through dashboards. It even breaks out traffic from AI assistants such as ChatGPT and Perplexity, which is now a channel worth measuring on its own.
+
+The goal is simple: find the traffic that pays, and stop guessing.
+
+### MacKitty: A Native Mac Cleaner I Can Actually Trust
+
+Published 2026-09-21 · https://saiakashneela.com/#why-i-built-mackitty
+
+My MacBook kept running out of space, and it was never my photos. It was Xcode DerivedData, browser caches, the npm cache and app logs quietly piling up from years of builds.
+
+The commercial cleaners I tried didn't sit right with me. Many are heavy Electron apps with background daemons and subscriptions, and I don't love giving an opaque tool permission to delete things on the machine I work on.
+
+So I wrote MacKitty in 100% native Swift and SwiftUI, as a universal binary for Apple silicon and Intel Macs. It only ever cleans a fixed list of rebuildable cache and log folders. Documents, Desktop, Downloads, Photos, Git repositories, the Keychain and macOS system files are never touched, scans are a dry run, and nothing is removed until you review it.
+
+It also gives you a one-screen dashboard with storage, live CPU and memory, battery and network, plus a menu bar popover. The built-in updater only installs builds signed with MacKitty's Developer ID and notarised by Apple. No telemetry, no ads, no subscription.
+
+It's free and the source is on GitHub. Allow Kitty to take care of your Mac.
+
+### OpenFlareStack: Stop Renting Software, Run It on Your Own Cloudflare
+
+Published 2026-09-14 · https://saiakashneela.com/#why-i-built-openflarestack
+
+I spend a lot of time on Cloudflare Workers, and I kept finding brilliant open-source apps built for it scattered across GitHub: URL shorteners, uptime monitors, temporary email, analytics, even full CMSs. There was no single place to discover them.
+
+Meanwhile I was paying monthly for SaaS that could run in my own Cloudflare account, often on the free tier, with my data staying with me.
+
+OpenFlareStack is the catalog I wanted. It lists open-source, self-hosted apps that deploy to your own Cloudflare account, discovered from GitHub and re-ranked every night by stars and recent commits. Every listing is open source, not a fork, not archived, and has had a commit in the last 12 months. Most have a Deploy to Cloudflare button that copies the repository into your GitHub account and creates the D1 databases, KV namespaces and R2 buckets it needs.
+
+It also maps popular swaps, such as OpenSEO instead of Semrush, Sink instead of Bitly and UptimeFlare instead of UptimeRobot, so you can start from the bill you want to cancel. OpenFlareStack never hosts anyone's code. It links straight to each author's repository, and the ranking logic is open source too.
+
+### TopTheBid: A Leaderboard Where Money Is the Only Rule
+
+Published 2026-08-30 · https://saiakashneela.com/#why-i-built-topthebid
+
+TopTheBid started as a weekend experiment and a bit of a joke: what if a leaderboard had exactly one rule, and whoever pays the most sits on top?
+
+There are no accounts and no sign-up. You enter your X handle, your website and an amount from $1, pay by card through Stripe, and the listing goes live the moment payment clears. To take a spot you bid at least $1 more than the listing in it. Bids only go up, ties go to whoever got there first, and placements never expire. They only move down when someone pays more.
+
+I built it to play with a tiny, honest product: one page, one payment flow and rules simple enough to fit in a tweet. It was also a fun way to put my own projects on the board.
+
+It's paid placement, not an endorsement, and it says so clearly. Sometimes the best way to learn about pricing, payments and virality is to ship something small and watch what people do with it.
+
+### ArivuLabs: Giving Every Business a Voice Agent and an Ad
+
+Published 2026-08-12 · https://saiakashneela.com/#why-i-built-arivulabs
+
+Small businesses miss calls. A clinic, a salon or a local shop can't staff a phone line around the clock, and every missed call is a customer who rings the next place on the list. Those same businesses rarely have the budget for a proper video ad either.
+
+I built ArivuLabs to solve both from one input: your website. Paste the link and ArivuAgents builds a voice agent that has read your pages and answers calls in 70+ languages, with accent-native voices for Indian languages, so Tamil sounds Tamil and Malayalam sounds Malayalam. It qualifies leads, books appointments, handles interruptions naturally and hands off to a person when judgement is needed.
+
+ArivuStudio is the creative side: video generation, image and ad creation, multilingual dubbing, voice cloning and speech, with the cost of every run shown up front.
+
+Building it meant real-time speech, telephony and a lot of care around the rules. Outbound calls are only placed within legal calling hours, always open by saying the caller is talking to an AI, and skip anyone on the business's do-not-call list. Every new account gets 100 minutes and a phone number free for 4 weeks, because the best demo is your own phone ringing.
+
+### Gita Sadhana: Building a Calm Place to Read the Bhagavad Gita
+
+Published 2026-06-18 · https://saiakashneela.com/#why-i-built-gita-sadhana
+
+The Bhagavad Gita is a text I keep coming back to, but most places to read it online are cluttered with ads, split across languages, or hard to read on a phone.
+
+Gita Sadhana is the study companion I wanted: all 18 chapters and 701 verses in Sanskrit with transliteration, a clear translation, a reflection and the essence of every verse, in 12 languages including Hindi, Telugu, Tamil, Kannada, Malayalam, Bengali and Marathi. Every verse has its own page and its own recitation.
+
+I added small habits that support a daily practice: a verse of the day, saved verses and personal reflections, a reading streak, and Gita AI for asking questions about the teachings.
+
+It's free. As an engineer, it was a lesson in building for readers rather than users: fast pages, good typography and structured content that search engines and AI assistants can understand verse by verse.
+
+### Solving the S3 Headache: Why I Built BucketStack
+
+Published 2026-02-19 · https://saiakashneela.com/#why-i-built-bucketstack
+
+I honestly dislike the AWS console for day-to-day file management. It's slow and multi-layered, and finding one nested object feels like searching for a needle in a haystack. I also split my week between macOS, Windows and Linux, so a Windows-only S3 browser was never going to cut it.
+
+BucketStack is a free, open-source (MIT) desktop app that makes S3 buckets feel like local folders. It's built with Rust and Tauri 2 instead of Electron, with a React 19 and TypeScript interface, so it stays lightweight.
+
+It's not locked to AWS. I use it daily with Cloudflare R2, MinIO, Wasabi, Backblaze B2, DigitalOcean Spaces and Railway. You can copy files directly between providers with live progress, edit JSON, YAML, Markdown and code in the built-in editor, restore deleted files from Trash, share expiring links, back up folders on a schedule and see storage breakdowns.
+
+Access keys stay on your computer, encrypted with AES-256-GCM. No account, no tracking. Builds are available for macOS (Apple silicon and Intel), Windows 10 and 11, and Linux (AppImage, .deb and .rpm).
+
+### StickyDraft: Open. Write. Done.
+
+Published 2026-02-03 · https://saiakashneela.com/#why-i-built-stickydraft
+
+Half the thoughts in my working day are throwaway: a command I need in five minutes, a name for a variable, a to-do I'll forget by lunch. Opening a full note-taking app for that felt like overkill, and most of them want an account before you can type a word.
+
+StickyDraft is a sticky-notes board that opens in your browser and is ready the moment it loads. Click anywhere to start a note, drag and resize notes, pick from six colours, split work across multiple boards and switch to dark mode.
+
+Notes are saved locally in your browser, so it works offline, with no signup and no third-party analytics, ads or tracking. If you want your drafts on more than one device, you can optionally sign in with Google or GitHub to sync them.
+
+The source is on GitHub. Sometimes the best tool is the one that gets out of your way.
+
+### Why I Built checkemail: Email Validation Without the Monthly Bill
+
+Published 2026-01-10 · https://saiakashneela.com/#why-i-built-checkemail
+
+Every sign-up form I build eventually needs the same thing: catch typos, block throwaway inboxes and stop fake accounts without punishing real users. The usual answer is a paid validation API that bills per check and sees every address you send it.
+
+I didn't want either of those, so I built checkemail, a free, open-source (MIT) email validation engine with zero runtime dependencies.
+
+It runs four checks, cheapest first. Syntax, 9,000+ disposable domains and role inboxes like support@ are checked locally with no network call. Then DNS confirms the domain exists and has MX records. Then it fingerprints the provider (Gmail, Outlook, Proton and more) and canonicalises aliases. Finally every signal adds up to a 0 to 100 confidence score with a clear status such as LIKELY or DISPOSABLE.
+
+You can npm i @isan3/checkemail in Node.js or Bun, run it as a Docker HTTP API, or use it right in the browser. Only the domain is ever looked up, so addresses never leave your servers, and the disposable list is refreshed every Monday and Thursday by a GitHub Action. It deliberately never sends SMTP probes: it proves a domain can receive mail, not that a specific mailbox exists.
+
+### PDFamaze: PDF Tools That Never Upload Your Files
+
+Published 2025-10-27 · https://saiakashneela.com/#why-i-built-pdfamaze
+
+Signing a rental agreement, merging bank statements, redacting a passport scan: these are exactly the documents I don't want to upload to a random website just to rotate a page.
+
+Browsers can do this work now. PDFamaze is a free, open-source set of 51 PDF tools that run entirely inside your browser tab using pdf-lib, pdf.js and WebAssembly. Files are processed on your device and never uploaded, with no account, no watermark and no usage limits.
+
+It covers the everyday jobs, like signing, filling forms, merging, splitting, compressing, rotating and adding page numbers, and the careful ones: OCR for scanned pages, redaction, removing scripts and embedded files, encryption, changing permissions and even showing any JavaScript hidden inside a PDF.
+
+There's no history by design. Close the tab and it's gone.
+
+### Integrating Model Context Protocol (MCP) with Claude for DevOps
+
+Published 2025-10-01 · https://saiakashneela.com/#mcp-for-devops
+
+The Model Context Protocol (MCP) fundamentally changes AI assistance. I built a specialised MCP server that bridges Claude Desktop directly with Cloudflare Workers and Prometheus metrics.
+
+Instead of opening five browser tabs to check error spikes or toggle routing rules, I now ask: “Inspect error rates on the auth worker over the last 30 minutes.” The agent pulls real-time telemetry, spots the anomaly and proposes the exact fix.
+
+### Why I Migrated from Complex Kubernetes to Coolify for Solo Projects
+
+Published 2025-09-19 · https://saiakashneela.com/#kubernetes-to-coolify
+
+For years I insisted on deploying everything onto production-grade Kubernetes with Helm charts and ingress controllers. That's essential for large enterprises, but for independent builders and small services it adds an enormous cognitive tax.
+
+I moved my personal stack and side projects to Coolify on dedicated Hetzner nodes. The developer experience is stellar: automatic wildcard SSL, instant GitHub PR preview environments and raw Docker Compose simplicity, without losing control of the infrastructure.
+
+## FAQ
+
+### Who is Sai Akash Neela?
+
+Sai Akash Neela is a UK-based Senior AI Engineer at Levocell with 6+ years of experience across AI, cloud and DevOps. He architects battery, IoT and AI platforms, is Co-Founder & CTO of GrabAI and founder of PixelMercury, and builds indie products such as ArivuLabs, PilotFox, BucketStack, MacKitty and checkemail.
+
+### What does Sai Akash Neela do at Levocell?
+
+Since August 2026 he has been Levocell's Senior AI Engineer and architecture lead. He owns DevOps, full-stack development and database administration, designs IoT connectivity for battery and solar systems over MQTT and NB-IoT, and builds AI-driven energy management.
+
+### What products has Sai Akash Neela built?
+
+His live products include ArivuLabs (AI voice agents), PilotFox (cookieless analytics with revenue attribution), BucketStack (open-source S3 desktop manager), MacKitty (native Swift Mac cleaner), checkemail (open-source email validation), PDFamaze (in-browser PDF tools), OpenFlareStack (self-hosted Cloudflare apps), Gita Sadhana, StickyDraft and TopTheBid.
+
+### Which technologies does Sai Akash Neela specialise in?
+
+AI agents, RAG and MCP servers; IoT over MQTT and NB-IoT; AWS, Azure and Cloudflare; Docker, Kubernetes and Terraform; PostgreSQL, MongoDB and Redis; and TypeScript, React, Node.js, Python, Go, Rust, Tauri and Swift.
+
+### Is BucketStack free and open source?
+
+Yes. BucketStack is a free, MIT-licensed desktop app for macOS, Windows and Linux, built with Rust and Tauri. It manages AWS S3, Cloudflare R2, MinIO, Wasabi, Backblaze B2 and other S3-compatible storage, with access keys encrypted on your own computer.
+
+### How can I contact or hire Sai Akash Neela?
+
+Email hello@saiakash.dev or saiakashneela@outlook.com, message @TheSaiAkash on X, or connect on LinkedIn. For agency projects, see PixelMercury or GeeksDesigns.
+
+### Where can I download Sai Akash Neela's resume?
+
+His latest resume is available as a PDF and a Word document.
